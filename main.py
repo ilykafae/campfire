@@ -1,4 +1,4 @@
-import pygame, asyncio
+import pygame, asyncio, entity
 
 DISPLAY_W = 720
 DISPLAY_H = 480
@@ -7,6 +7,15 @@ pygame.init()
 
 screen = pygame.display.set_mode((DISPLAY_W, DISPLAY_H))
 clock = pygame.time.Clock()
+
+entity_manager = entity.EntityManager()
+
+# systems
+def velocity_sys():
+    return
+
+def render_sys():
+    return
 
 # main entry point
 async def main():
@@ -19,7 +28,11 @@ async def main():
     
     screen.fill("black")
 
-    # draw calls
+    # draw begin
+
+
+
+    # draw end
 
     pygame.display.flip();
 
