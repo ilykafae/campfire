@@ -10,7 +10,6 @@ clock = pygame.time.Clock()
 
 entity_manager = entity.EntityManager()
 
-# systems
 
 def velocity_sys(manager: entity.EntityManager, dt: float) -> None:
     if dt <= 0:
